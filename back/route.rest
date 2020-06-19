@@ -1,0 +1,44 @@
+GET http://localhost:3000/category
+
+###
+
+GET http://localhost:3000/adminUser/5ebf7f7a2e8cbedb8c6019c9
+
+###
+
+POST http://localhost:3000/adminUser
+Content-Type: application/json
+
+{
+    "fullName": "Senura Diwantha",
+    "userName": "senura",
+    "password": "senura",
+    "role": "store manager",
+    "email": "senura.d@gmail.com",
+    "contactNo": "0779822332"
+}
+
+
+###
+
+DELETE http://localhost:3000/category/5ec3b31930dfe7dda8cdb8d9
+
+
+###
+
+PATCH http://localhost:3000/subscribers/5ebd4fd1a4d69e0354e51a03
+Content-Type: application/json
+
+{
+    "name": "Viraj Konthasinghe"
+}
+
+###
+POST http://localhost:3000/category
+Content-Type: application/json
+
+{
+    "subCategory":"T-Shirtuy",
+    "mainCategory":"men-wear",
+    "description":"A T-shirt clean."
+}
